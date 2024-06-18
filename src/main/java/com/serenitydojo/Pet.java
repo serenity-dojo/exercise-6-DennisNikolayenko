@@ -2,8 +2,8 @@ package com.serenitydojo;
 
 public abstract class Pet {
 
-    private String name;
-    private int age;
+    final String name;
+    final int age;
 
     public Pet(String name, int age) {
         this.name = name;
