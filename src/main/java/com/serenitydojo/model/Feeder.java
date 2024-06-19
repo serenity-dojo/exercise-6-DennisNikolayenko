@@ -1,24 +1,26 @@
 package com.serenitydojo.model;
 
+import static com.serenitydojo.model.FoodType.*;
+
 public class Feeder {
-    public String feeds(String animal, boolean isPremium) {
+    public Enum feeds(String animal, boolean isPremium) {
         if (animal.equals("Cat")) {
             if (isPremium) {
-                return "Salmon";
+                return SALMON;
             } else {
-                return "Tuna";
+                return TUNA;
             }
         } else if (animal.equals("Dog")) {
             if (isPremium) {
-                return "Bone";
+                return BONE;
             } else {
-                return "Dog Food";
+                return DOG_FOOD;
             }
         } else {
             if (isPremium) {
-                return "Lettuce";
+                return LETTUCE;
             } else {
-                return "Cabbage";
+                return CABBAGE;
             }
         }
     }
